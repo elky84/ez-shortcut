@@ -1,0 +1,212 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\EzShortcut.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\EzShortcut.ico"
+IDI_FOLDER_ICON         ICON                    "res\\Folder.ico"
+IDI_WEB_ICON            ICON                    "res\\Chrome.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EZSHORTCUT_DIALOG DIALOGEX 0, 0, 329, 115
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "EzShortcut"
+FONT 9, "돋움체", 400, 0, 0x81
+BEGIN
+    LISTBOX         IDC_LIST_SHORTCUT,2,15,322,71,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_BUTTON_ADD,234,3,43,11
+    PUSHBUTTON      "&Remove",IDC_BUTTON_REMOVE,278,3,46,11
+    DEFPUSHBUTTON   "&Edit",IDC_BUTTON_EDIT,281,86,43,12
+    LTEXT           "Shortcut Name",IDC_STATIC_SHORTCUT_NAME,32,88,46,8
+    LTEXT           "Shortcut List",IDC_STATIC_LIST,4,5,44,9
+    LTEXT           "HotKey",IDC_STATIC_HOTKEY,179,88,25,8
+    LTEXT           " ",IDC_STATIC_HOTKEY_CONTENT,207,87,71,11,0,WS_EX_CLIENTEDGE
+    LTEXT           " ",IDC_STATIC_SHORTCUT_NAME_CONTENT,31,99,293,11,0,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_EDIT DIALOGEX 0, 0, 252, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Shortcut"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SHORTCUT_NAME,40,7,208,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TARGET_PROGRAM,40,19,160,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&File",IDC_BUTTON_FILE_FIND,201,20,17,10
+    PUSHBUTTON      "Fol&der",IDC_BUTTON_FOLDER_FIND,221,20,27,10
+    EDITTEXT        IDC_EDIT_PARAMETER,40,31,208,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOTKEY,40,43,166,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Ok",IDC_BUTTON_OK,105,56,24,10
+    PUSHBUTTON      "&Cancel",IDC_BUTTON_CANCEL,129,56,30,10
+    RTEXT           "Path",IDC_STATIC_TARGET_PROGRAM,17,20,19,9
+    RTEXT           "Parameter",IDC_STATIC_PARAMETER,0,32,36,9
+    RTEXT           "Name",IDC_STATIC_SHORTCUT_NAME,13,8,22,10
+    RTEXT           "HotKey",IDC_STATIC_HOTKEY,8,43,27,9
+    RTEXT           "← To Erase",IDC_STATIC_PARAMETER2,207,43,40,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "EzShortcut.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "EzShortcut.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_EZSHORTCUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 324
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "EzShortcut 정보(&A)..."
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\EzShortcut.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
