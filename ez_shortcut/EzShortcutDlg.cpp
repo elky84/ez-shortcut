@@ -319,21 +319,21 @@ bool CEzShortcutDlg::LoadShortCutList()
 bool CEzShortcutDlg::SaveShortCutList()
 {
 	light::XMLWriter generator;
-	if(false == generator.Open(m_strXMLFileName, _T("ShortCutList")))
+	if(false == generator.open(m_strXMLFileName, L"ShortCutList"))
 		return false;
 
 	for(MAP_SHORTCUT_INFO::iterator it = m_map_ShortcutInfo.begin(); it != m_map_ShortcutInfo.end(); ++it)
 	{
-		generator.Elem(_T("ShortCut"));
+		generator.elem(L"ShortCut");
 
 		SHORTCUT_INFO& ShortCutInfo = it->second;
 
-		generator.Attribute(_T("Path"), ShortCutInfo.m_strProgramPath);
-		generator.Attribute(_T("Name"), ShortCutInfo.m_strShortcutName);
-		generator.Attribute(_T("Parameter"), ShortCutInfo.m_strParameter);
-		generator.Attribute(_T("HotKey"), ShortCutInfo.m_HotKey.Encode());
+		generator.attribute(L"Path", ShortCutInfo.m_strProgramPath);
+		generator.attribute(L"Name", ShortCutInfo.m_strShortcutName);
+		generator.attribute(L"Parameter", ShortCutInfo.m_strParameter);
+		generator.attribute(L"HotKey", ShortCutInfo.m_HotKey.Encode());
 
-		generator.ElemEnd();
+		generator.elem_end();
 	}
 	return true;
 }
