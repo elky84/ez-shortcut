@@ -11,7 +11,7 @@
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/elky84/ez_shortcut.svg)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/elky84/ez_shortcut.svg)
 
-# ez_shortcut
+# ez-shortcut
 win32 [only on windows] shortcut &amp; hotkey programs.
 
 ![ez_shortcut](./ez_shortcut.png)
